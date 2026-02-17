@@ -1,3 +1,51 @@
+# AI Experts Assignment (Python) – Running Tests
+
+This guide explains how to run the test suite locally and using Docker.
+
+---
+
+## Run Tests Locally
+
+1. **Create and activate a virtual environment**
+
+### Mac / Linux
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run tests**
+```bash
+python -m pytest -v
+```
+
+---
+
+## Run Tests with Docker
+
+1. **Build the Docker image**
+```bash
+docker build -t ai-experts-python-assignment .
+```
+
+2. **Run the tests**
+```bash
+docker run --rm ai-experts-python-assignment
+```
+
+---
+
 # AI Experts Assignment (Python)
 
 This assignment evaluates your ability to:
